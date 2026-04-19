@@ -1,0 +1,183 @@
+import type { Product, Category, Testimonial } from '@/types';
+
+export const categories: Category[] = [
+  {
+    id: 'blended',
+    name: 'Blended Masalas',
+    description: 'Authentic spice blends for every dish',
+    image: '/category-blended.jpg',
+    productCount: 12,
+  },
+  {
+    id: 'pure',
+    name: 'Pure Spices',
+    description: 'Single-origin spices in purest form',
+    image: '/category-pure.jpg',
+    productCount: 8,
+  },
+  {
+    id: 'whole',
+    name: 'Whole Spices',
+    description: 'Premium whole spices for fresh grinding',
+    image: '/category-whole.jpg',
+    productCount: 10,
+  },
+  {
+    id: 'specialty',
+    name: 'Specialty Mixes',
+    description: 'Unique blends for special occasions',
+    image: '/category-specialty.jpg',
+    productCount: 6,
+  },
+  {
+    id: 'regional',
+    name: 'Regional Favorites',
+    description: 'Authentic regional spice blends',
+    image: '/category-regional.jpg',
+    productCount: 8,
+  },
+  {
+    id: 'gifts',
+    name: 'Gift Sets',
+    description: 'Perfect gifts for spice lovers',
+    image: '/category-gift.jpg',
+    productCount: 4,
+  },
+];
+
+export const products: Product[] = [
+  {
+    id: 'idli-podi',
+    name: 'Idli Podi',
+    description: 'Our signature spicy idli podi, made with premium lentils and roasted spices. Perfect with sesame oil or ghee.',
+    price: 36,
+    originalPrice: 45,
+    weight: '100g',
+    image: '/idly podi .png',
+    category: 'blended',
+    rating: 4.9,
+    reviews: 1250,
+    inStock: true,
+    tags: ['bestseller', 'signature'],
+  },
+  {
+    id: 'puliyotharai-podi',
+    name: 'Puliyotharai Podi',
+    description: 'Authentic tamarind rice mix with a tangy and spicy profile. Just mix with hot rice for an instant traditional meal.',
+    price: 36,
+    originalPrice: 45,
+    weight: '100g',
+    image: '/puliyothirai podi .png',
+    category: 'regional',
+    rating: 4.8,
+    reviews: 840,
+    inStock: true,
+    tags: ['bestseller', 'traditional'],
+  },
+  {
+    id: 'karuveppilai-podi',
+    name: 'Karuveppilai Podi',
+    description: 'Nutritious curry leaf powder blended with spice for a healthy and flavorful addition to your daily meals.',
+    price: 36,
+    originalPrice: 45,
+    weight: '100g',
+    image: '/karuvepillai Podi .png',
+    category: 'blended',
+    rating: 4.7,
+    reviews: 560,
+    inStock: true,
+    tags: ['healthy', 'south-indian'],
+  },
+  {
+    id: 'paruppu-podi',
+    name: 'Paruppu Podi',
+    description: 'Traditional roasted lentil powder with spices. A comfort food staple that tastes heavenly with hot rice and ghee.',
+    price: 36,
+    originalPrice: 45,
+    weight: '100g',
+    image: '/Paruppu podi .png',
+    category: 'blended',
+    rating: 4.9,
+    reviews: 920,
+    inStock: true,
+    tags: ['bestseller', 'staple'],
+  },
+  {
+    id: 'murungai-soup',
+    name: 'Murungaikkeerai Soup Powder',
+    description: 'Instant drumstick leaf soup mix. Packed with iron and nutrients, offering a refreshing and healthy herbal drink.',
+    price: 18,
+    originalPrice: 25,
+    weight: '50g',
+    image: '/Muruga Keerai podi .png',
+    category: 'specialty',
+    rating: 4.8,
+    reviews: 430,
+    inStock: true,
+    tags: ['healthy', 'specialty'],
+  },
+  {
+    id: 'kollu-idli-podi',
+    name: 'Kollu Idli Podi',
+    description: 'A nutritional powerhouse. This Horse Gram idli powder is perfect for weight management and deep traditional flavor.',
+    price: 36,
+    originalPrice: 45,
+    weight: '100g',
+    image: '/Kollu idly podi .png',
+    category: 'blended',
+    rating: 4.9,
+    reviews: 110,
+    inStock: true,
+    tags: ['bestseller', 'healthy'],
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    id: '1',
+    name: 'Priya R.',
+    location: 'Chennai',
+    content: 'The sambar masala reminds me of my grandmother\'s cooking. Absolutely authentic! The aroma takes me back to my childhood.',
+    rating: 5,
+  },
+  {
+    id: '2',
+    name: 'Arun K.',
+    location: 'Bangalore',
+    content: 'Finally found garam masala that tastes like home. Will definitely reorder. The quality is consistently excellent.',
+    rating: 5,
+  },
+  {
+    id: '3',
+    name: 'Lakshmi M.',
+    location: 'Coimbatore',
+    content: 'The quality is unmatched. You can smell the freshness as soon as you open the packet. Highly recommended!',
+    rating: 5,
+  },
+  {
+    id: '4',
+    name: 'Rahul S.',
+    location: 'Hyderabad',
+    content: 'The biryani masala is phenomenal! My family couldn\'t believe I made it at home. Will be ordering more soon.',
+    rating: 5,
+  },
+  {
+    id: '5',
+    name: 'Meera T.',
+    location: 'Mumbai',
+    content: 'Love the Chettinad masala! Perfect heat and flavor balance. Fast delivery and great packaging too.',
+    rating: 4,
+  },
+];
+
+export const getProductsByCategory = (categoryId: string): Product[] => {
+  return products.filter(p => p.category === categoryId);
+};
+
+export const getProductById = (id: string): Product | undefined => {
+  return products.find(p => p.id === id);
+};
+
+export const getFeaturedProducts = (): Product[] => {
+  return products.filter(p => p.tags.includes('bestseller')).slice(0, 5);
+};
