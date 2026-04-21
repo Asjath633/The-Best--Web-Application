@@ -25,11 +25,12 @@ export default function CartDrawer() {
       description: 'Opening WhatsApp to complete your order.',
     });
     
-    setTimeout(() => {
-      window.open(whatsappUrl, '_blank');
-      clearCart();
-      setIsCartOpen(false);
-    }, 1500);
+    // Clear cart and close drawer instantly
+    clearCart();
+    setIsCartOpen(false);
+    
+    // Mobile-safe redirect (bypass popup blockers)
+    window.location.href = whatsappUrl;
   };
 
   return (
