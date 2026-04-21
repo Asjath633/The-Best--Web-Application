@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, useMemo } from 'react';
 import { products as allProducts, categories } from '@/data/products';
 import { useCart } from '@/context/CartContext';
-import { ShoppingCart, Star, Check, X } from 'lucide-react';
+import { ShoppingCart, Check } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface ProductsProps {
