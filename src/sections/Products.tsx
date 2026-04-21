@@ -60,7 +60,7 @@ export default function Products({ selectedCategory, onSelectCategory }: Product
   };
 
   return (
-    <section id="products" ref={sectionRef} className="section-rust py-20 min-h-screen">
+    <section id="products" ref={sectionRef} className="section-rust pt-24 pb-12 sm:py-20 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
