@@ -98,11 +98,11 @@ export default function Products({ selectedCategory, onSelectCategory }: Product
               style={{ transitionDelay: `${(index % 4 + 1) * 100}ms` }}
             >
               {/* Product Image */}
-              <div className="relative h-[220px] sm:h-64 bg-white p-4 sm:p-8 flex items-center justify-center overflow-hidden">
+              <div className="relative h-[180px] sm:h-64 bg-white p-4 sm:p-8 flex items-center justify-center overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110 drop-shadow-2xl"
+                  className="h-full w-auto object-contain mix-blend-multiply transition-transform duration-700 group-hover:scale-110 drop-shadow-2xl"
                 />
 
                 {/* Status Badges */}
