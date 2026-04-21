@@ -98,7 +98,7 @@ export default function Products({ selectedCategory, onSelectCategory }: Product
               style={{ transitionDelay: `${(index % 4 + 1) * 100}ms` }}
             >
               {/* Product Image */}
-              <div className="relative h-40 sm:h-64 bg-white p-4 sm:p-8 flex items-center justify-center overflow-hidden">
+              <div className="relative h-[220px] sm:h-64 bg-white p-4 sm:p-8 flex items-center justify-center overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}
