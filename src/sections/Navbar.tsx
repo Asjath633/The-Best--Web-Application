@@ -43,7 +43,7 @@ export default function Navbar() {
           >
             <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0">
               <img
-                src="/the%20Best%20logo.png"
+                src="/the%20Best%20logo.png?v=1"
                 alt="The Best Logo"
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
                 style={{ imageRendering: 'high-quality' }}
@@ -104,7 +104,7 @@ export default function Navbar() {
                     <SheetTitle className="text-left flex items-center gap-3">
                       <div className="w-12 h-12 bg-[#f3e5ab]/10 rounded-xl p-1.5 border border-[#f3e5ab]/20">
                         <img 
-                          src="/the%20Best%20logo.png" 
+                          src="/the%20Best%20logo.png?v=1" 
                           alt="The Best Logo" 
                           className="w-full h-full object-contain"
                           style={{ imageRendering: 'high-quality' }}

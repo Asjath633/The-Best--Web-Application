@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="mb-6 flex items-center gap-4">
               <div className="w-16 h-16 bg-[#f3e5ab]/5 rounded-2xl p-2 border border-[#f3e5ab]/10 flex-shrink-0">
                 <img 
-                  src="/the%20Best%20logo.png" 
+                  src="/the%20Best%20logo.png?v=1" 
                   alt="The Best Logo" 
                   className="w-full h-full object-contain"
                   style={{ imageRendering: 'high-quality' }}
