@@ -43,10 +43,9 @@ export default function Navbar() {
           >
             <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0">
               <img
-                src="/logo.png"
-                alt="Ki Best Logo"
+                src="/the%20Best%20logo.png"
+                alt="The Best Logo"
                 className="w-full h-full object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-110"
-                onError={(e) => (e.currentTarget.style.display = 'none')}
               />
             </div>
             <div className="text-left">
@@ -101,9 +100,18 @@ export default function Navbar() {
               <SheetContent side="right" className="bg-[#7c3c23] border-[#5a2d1a] w-[300px] p-0 overflow-hidden">
                 <div className="flex flex-col h-full">
                   <SheetHeader className="p-8 border-b border-[#5a2d1a] bg-[#5a2d1a]/30">
-                    <SheetTitle className="text-left">
-                      <span className="tamil-text text-3xl text-[#f3e5ab] block leading-tight font-bold">தி பெஸ்ட்</span>
-                      <span className="block text-xs text-[#d4a574] uppercase font-black tracking-[0.2em] mt-1">Pure & Homemade</span>
+                    <SheetTitle className="text-left flex items-center gap-3">
+                      <div className="w-12 h-12 bg-[#f3e5ab]/10 rounded-xl p-1.5 border border-[#f3e5ab]/20">
+                        <img 
+                          src="/the%20Best%20logo.png" 
+                          alt="The Best Logo" 
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div>
+                        <span className="tamil-text text-2xl text-[#f3e5ab] block leading-tight font-bold">தி பெஸ்ட்</span>
+                        <span className="block text-[10px] text-[#d4a574] uppercase font-black tracking-[0.2em] mt-1">Pure & Homemade</span>
+                      </div>
                     </SheetTitle>
                   </SheetHeader>
 

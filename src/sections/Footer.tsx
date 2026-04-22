@@ -17,13 +17,22 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-12 border-b border-[#f3e5ab]/20">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="mb-6">
-              <span className="tamil-text text-3xl text-[#f3e5ab] block leading-tight">
-                தி பெஸ்ட்
-              </span>
-              <span className="text-[#d4a574] text-lg tracking-wider uppercase font-bold">
-                Pure & Homemade
-              </span>
+            <div className="mb-6 flex items-center gap-4">
+              <div className="w-16 h-16 bg-[#f3e5ab]/5 rounded-2xl p-2 border border-[#f3e5ab]/10 flex-shrink-0">
+                <img 
+                  src="/the%20Best%20logo.png" 
+                  alt="The Best Logo" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <span className="tamil-text text-3xl text-[#f3e5ab] block leading-tight">
+                  தி பெஸ்ட்
+                </span>
+                <span className="text-[#d4a574] text-lg tracking-wider uppercase font-bold">
+                  Pure & Homemade
+                </span>
+              </div>
             </div>
             <p className="text-[#f3e5ab]/70 text-sm mb-6 leading-relaxed">
               Authentic South Indian masalas crafted with generational wisdom. 
