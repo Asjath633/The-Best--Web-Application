@@ -165,14 +165,14 @@ export const testimonials: Testimonial[] = [
     id: '1',
     name: 'saileka.',
     location: 'Tiruppur',
-    content: 'The sambar masala reminds me of my grandmother\'s cooking. Absolutely authentic! The aroma takes me back to my childhood.',
+    content: 'The idly podi is reminds me of my grandmother\'s cooking. Absolutely authentic! The aroma takes me back to my childhood.',
     rating: 5,
   },
   {
     id: '2',
     name: 'prakash.',
     location: 'Tiruppur',
-    content: 'Finally found garam masala that tastes like home. Will definitely reorder. The quality is consistently excellent.',
+    content: 'Finally found puliyotharai podi that tastes like home. Will definitely reorder. The quality is consistently excellent.',
     rating: 5,
   },
   {
@@ -186,14 +186,14 @@ export const testimonials: Testimonial[] = [
     id: '4',
     name: 'sudharsan.',
     location: 'Tiruppur',
-    content: 'The biryani masala is phenomenal! My family couldn\'t believe I made it at home. Will be ordering more soon.',
+    content: 'The Ragi Malt is phenomenal! My family couldn\'t believe I made it at home. Will be ordering more soon.',
     rating: 5,
   },
   {
     id: '5',
     name: 'viji.',
     location: 'Tiruppur',
-    content: 'Love the Chettinad masala! Perfect heat and flavor balance. Fast delivery and great packaging too.',
+    content: 'Love the Ellu podi! Perfect flavor balance. Fast delivery and great packaging too.',
     rating: 4,
   },
 ];
