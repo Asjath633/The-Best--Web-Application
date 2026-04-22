@@ -23,6 +23,7 @@ export default function Footer() {
                   src="/the%20Best%20logo.png" 
                   alt="The Best Logo" 
                   className="w-full h-full object-contain"
+                  style={{ imageRendering: 'high-quality' }}
                 />
               </div>
               <div>
