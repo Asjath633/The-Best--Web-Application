@@ -46,7 +46,6 @@ export default function Navbar() {
                 src="/the%20Best%20logo.png?v=1"
                 alt="The Best Logo"
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                style={{ imageRendering: 'high-quality' }}
               />
             </div>
             <div className="text-left">
@@ -107,7 +106,6 @@ export default function Navbar() {
                           src="/the%20Best%20logo.png?v=1" 
                           alt="The Best Logo" 
                           className="w-full h-full object-contain"
-                          style={{ imageRendering: 'high-quality' }}
                         />
                       </div>
                       <div>
